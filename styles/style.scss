@@ -1,0 +1,225 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$backgroundColor: #436c9f;
+$containerBackgroundColor: #fff;
+$validateColorError: rgb(173, 5, 5);
+
+body {
+    background-color: $backgroundColor;
+    font-family: 'Mohave', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.popUpDelete {
+    display: block;
+}
+
+.addStudentPopUp {
+    display: none;
+    span:nth-child(1) {
+        padding-top: 10px;
+        padding-bottom: 23px;
+    }
+}
+
+.popUpBackground {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    top: 0px;
+    bottom:0px;
+}
+
+.popUpBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $containerBackgroundColor;
+  z-index: 2;
+  height: 200px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  .addStudentInput {
+    width: 90%;
+  }
+}
+
+.popUpBox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer {
+    z-index: 0;
+    background-color: $containerBackgroundColor;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    .wrapperMainContainer {
+        width: 90%;
+        padding-bottom: 37px;
+    }
+}
+
+tr {
+    border-bottom: 1px #dbdcdd solid;
+}
+
+td {
+    padding: 10px 0;
+}
+tr:nth-child(1) {
+    background-color: #eaedf0;
+}
+
+.projectInfo {
+    margin:0 auto;
+    text-align: center;
+    .projectInfoTable {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        tr:hover {
+            background-color: #337fed;
+            color: #fff;
+        }
+        tr:nth-child(1):hover {
+            background-color: #eaedf0;
+            color: #000;
+        }
+    }
+    padding-bottom: 30px;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    form {
+        margin: auto;
+    }
+}
+
+.groupsTable {
+    z-index: 0;
+    width: 250px;
+}
+
+.myButton {
+    text-transform: uppercase;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+    margin: 20px 0;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButtonDelete {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border:1px solid #d02718;
+	text-shadow:0px 1px 0px #810e05;
+    margin: 0;
+}
+.myButtonDelete:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color:#c62d1f;
+}
+
+input {
+    padding: 5px;
+    font-size: 21px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    outline: none;
+}
+        
+.studentExistsSpan {
+    padding-top: 40px;
+}
+
+select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+
+.newProject form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    input {
+        margin-bottom: 20px;
+    }
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+.projectInfoH3 {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.full {
+    position: absolute;
+    padding-left: 57px;
+    margin-top: -28px;
+    font-weight: 500;
+    font-size: 20px;
+    color: orange;
+}
