@@ -4,7 +4,8 @@ This project is made with **PHP**.
 
 All data is stored in MySQL database.
 
-**nfq_internhsip.sql** INCLUDED. DB_NAME: nfq_internship (More info in **config.php** file).
+**nfq_internhsip.sql** INCLUDED.<br/> 
+DB_NAME: nfq_internship (More info in **config.php** file).
 
 Task is implemented as a web application using OOP principles with **PHP**.
 
