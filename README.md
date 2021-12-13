@@ -30,7 +30,7 @@ students per group. Also, Groups are automatically initialized when a project is
 1. 
 Information (students, groups) on the page automatically updates every 10 seconds, so when user change any information from one browser, and another user who also use the same page in another browser, he can see updated information every 10 seconds.
 
-In **project.php Line:30** you can find my solution to this update. With **jQuery** help information in <div class="groups" id="groupsUpdate"></div> is shown from groups.php file and in <table class="projectInfoTable" id="projectInfoTable"></table> info is shown from **students_list.php**.
+In **project.php Line:30** you can find my solution to this update. With **jQuery** help information in "<div class="groups" id="groupsUpdate"></div>" is shown from groups.php file and in "<table class="projectInfoTable" id="projectInfoTable"></table>" info is shown from **students_list.php**.
 
 2. 
 Implemented RESTful API in **classes/Student.php Line:35 getStudents() function**. Created student gets json_encode() when page is trying to get all students in this function and with this API I've mapped all information in **groups.php** and **students_list.php** so that all information could be visible in project.
