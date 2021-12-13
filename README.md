@@ -34,3 +34,6 @@ Implemented RESTful API in **classes/Student.php Line:35 getStudents() function*
 
 3. 
 Automated test is created with **phpunit: ^9.5**. I couldn't upload **vendor** folder files here. Test can be found at **tests/StudentTest.php**.
+
+What is more: 
+added .htaccess, styles with SASS, some scripts.
