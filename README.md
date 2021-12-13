@@ -33,7 +33,7 @@ Information (students, groups) on the page automatically updates every 10 second
 In **project.php Line:30** you can find my solution to this update. With **jQuery** help information in <div class="groups" id="groupsUpdate"></div> is shown from groups.php file and in <table class="projectInfoTable" id="projectInfoTable"></table> info is shown from **students_list.php**.
 
 2. 
-Implemented RESTful API in **classes/Student.php Line:35 getStudents() function** and with this API I've mapped all information in **groups.php** and **students_list.php** so that al information could be visible in project.
+Implemented RESTful API in **classes/Student.php Line:35 getStudents() function**. Created student gets json_encode() when page is trying to get all students in this function and with this API I've mapped all information in **groups.php** and **students_list.php** so that al information could be visible in project.
 
 3. 
 Automated test is created with **phpunit: ^9.5**. I couldn't upload **vendor** folder files here. Test can be found at **tests/StudentTest.php**.
