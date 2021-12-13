@@ -24,10 +24,13 @@ students per group. Also, Groups are automatically initialized when a project is
 
 **Bonus requirements results**:
 
-1. Information (students, groups) on the page automatically updates every 10 seconds, so when user change any information from one browser, and another user who also use the same page in another browser, he can see every updated information every 10 seconds.
+1. 
+Information (students, groups) on the page automatically updates every 10 seconds, so when user change any information from one browser, and another user who also use the same page in another browser, he can see every updated information every 10 seconds.
 
 In **project.php Line:30** you can find my solution to this update. With **jQuery** help information in <div class="groups" id="groupsUpdate"></div> is shown from groups.php file and in <table class="projectInfoTable" id="projectInfoTable"></table> info is shown from **students_list.php**.
 
-2. Implemented RESTful API in **classes/Student.php Line:35 getStudents() function** and with this API I've mapped all information in **groups.php** and **students_list.php** so that al information could be visible in project.
+2. 
+Implemented RESTful API in **classes/Student.php Line:35 getStudents() function** and with this API I've mapped all information in **groups.php** and **students_list.php** so that al information could be visible in project.
 
-3. Automated test is created with **phpunit: ^9.5**. I couldn't upload **vendor** folder files here. Test can be found at **tests/StudentTest.php**.
+3. 
+Automated test is created with **phpunit: ^9.5**. I couldn't upload **vendor** folder files here. Test can be found at **tests/StudentTest.php**.
