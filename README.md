@@ -10,7 +10,7 @@ Task is implemented as a web application using OOP principles with **PHP**.
 
 1. On first visit user can create a new project by providing a title of the project and
 a number of groups that will participate in the project and a maximum number of
-students per group. Also, Groups are automatically initialized when a project is created. Also, there're validations: if user enters not number - he can see error that he must enter only number, if user enters in name input only numbers - he can see error that he must enter only letters. If user don't enter anything in any input and submits - he can see error that he can't leave inputs empty.
+students per group. Also, Groups are automatically initialized when a project is created. Also, there're validations: if user enters not a number - he can see error that he must enter only number, if user enters in name input only numbers - he can see error that he must enter only letters. If user don't enter anything in any input and submits - he can see error that he can't leave inputs empty.
 
 2. When project exists, user can add new students using the “Add new student” button. Popup (used JavaScript for that) will be shown to enter full name of student. If student's name already exists in database, user gets validation that this student already exists. User gets a chance to go back and try again. If user enters only numbers - user also sees validation, that he can't enter number. If user don't enter anything - he can see error, that he must enter name.
 
